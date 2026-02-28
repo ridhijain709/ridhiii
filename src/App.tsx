@@ -192,6 +192,7 @@ export default function App() {
           </div>
         </div>
 
+        {/* Author photo */}
         <div style={{ position: "relative", zIndex: 1, display: "flex", justifyContent: "center" }}>
           <div style={{ position: "relative", display: "inline-block" }}>
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,#c9a96e,#6b4f10,#c9a96e)", zIndex: 0, padding: "3px" }}>
@@ -279,6 +280,9 @@ export default function App() {
             <BtnGold onClick={openAmazon}>Buy on Amazon</BtnGold>
             <BtnOutline onClick={openWhatsApp}>Order via WhatsApp</BtnOutline>
           </div>
+          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.52rem", letterSpacing: "0.1em", color: "rgba(232,224,208,0.25)", textTransform: "uppercase" }}>
+            Amazon India · a.co/d/h1iLPQF
+          </div>
         </div>
       </section>
 
@@ -320,7 +324,7 @@ export default function App() {
             <ContactCard icon="✉" label="Email"     sub="ridhijain608@gmail.com"  fn={openEmail}    />
             <ContactCard icon="💼" label="LinkedIn" sub="Connect professionally"  fn={openLinkedIn} />
             <ContactCard icon="📦" label="Amazon"   sub="Buy Aks · a.co/d/h1iLPQF" fn={openAmazon} />
-            <ContactCard icon="💬" label="WhatsApp" sub="Order signed copy"       fn={openWhatsApp} />
+            <ContactCard icon="💬" label="WhatsApp" sub="+91 8449825146"          fn={openWhatsApp} />
           </div>
 
           <div style={{ display: "flex", gap: "12px", justifyContent: "center", flexWrap: "wrap" }}>
