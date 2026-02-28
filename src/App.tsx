@@ -5,7 +5,7 @@ const LINKS = {
   amazon:   "https://a.co/d/h1iLPQF",
   linkedin: "https://www.linkedin.com/in/ridhi-jain-709/",
   email:    "mailto:ridhijain709@gmail.com?subject=Hello Ridhi",
-  whatsapp: `https://wa.me/919897000000?text=${encodeURIComponent("Hi Ridhi! I'd like to order a signed copy of 'Aks – Reflections of the Soul'. Please share details.")}`,
+  whatsapp: `https://wa.me/918449825146?text=${encodeURIComponent("Hi Ridhi! I'd like to order a signed copy of 'Aks – Reflections of the Soul'. Please share details.")}`,
 };
 
 const AUTHOR_PHOTO = `${import.meta.env.BASE_URL}author.jpg`;
