@@ -112,7 +112,6 @@ export default function App() {
           fontSize: "1rem", color: "#c9a96e", letterSpacing: "0.08em", flexShrink: 0,
         }}>रिधि जैन</button>
 
-        {/* Page section links */}
         <div style={{ display: "flex", gap: "20px", alignItems: "center", flexWrap: "wrap" }}>
           {navLinks.map(n => (
             <button key={n} onClick={() => goTo(n)} style={{
@@ -126,7 +125,6 @@ export default function App() {
           ))}
         </div>
 
-        {/* External links */}
         <div style={{ display: "flex", gap: "10px", alignItems: "center", flexShrink: 0 }}>
           <NavIconBtn label="LinkedIn" onClick={openLinkedIn} />
           <NavIconBtn label="Amazon"   onClick={openAmazon}   />
@@ -194,7 +192,6 @@ export default function App() {
           </div>
         </div>
 
-        {/* Author photo */}
         <div style={{ position: "relative", zIndex: 1, display: "flex", justifyContent: "center" }}>
           <div style={{ position: "relative", display: "inline-block" }}>
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,#c9a96e,#6b4f10,#c9a96e)", zIndex: 0, padding: "3px" }}>
@@ -267,10 +264,10 @@ export default function App() {
           </p>
           <div style={{ display: "flex", gap: "24px", marginBottom: "36px", flexWrap: "wrap" }}>
             {[
-              { lbl: "Published", val: "2025"            },
+              { lbl: "Published", val: "2025"             },
               { lbl: "Language",  val: "Hindi · English"  },
               { lbl: "Genre",     val: "Poetry"           },
-              { lbl: "Available", val: "Amazon India"     },
+              { lbl: "Available", val: "Amazon India"      },
             ].map(i => (
               <div key={i.lbl} style={{ borderLeft: "2px solid #c9a96e", paddingLeft: 12 }}>
                 <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.52rem", letterSpacing: "0.15em", color: "rgba(232,224,208,0.35)", textTransform: "uppercase", marginBottom: 3 }}>{i.lbl}</div>
@@ -281,9 +278,6 @@ export default function App() {
           <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", marginBottom: "20px" }}>
             <BtnGold onClick={openAmazon}>Buy on Amazon</BtnGold>
             <BtnOutline onClick={openWhatsApp}>Order via WhatsApp</BtnOutline>
-          </div>
-          <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "0.52rem", letterSpacing: "0.1em", color: "rgba(232,224,208,0.25)", textTransform: "uppercase" }}>
-            Amazon India · a.co/d/h1iLPQF
           </div>
         </div>
       </section>
@@ -322,9 +316,8 @@ export default function App() {
             For AI consulting, book orders, or just to connect — reach out through any of these channels.
           </p>
 
-          {/* 4 contact cards */}
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: "1px", background: "rgba(232,224,208,0.06)", marginBottom: "36px", textAlign: "left" }}>
-            <ContactCard icon="✉" label="Email"    sub="ridhijain709@gmail.com"  fn={openEmail}    />
+            <ContactCard icon="✉" label="Email"     sub="ridhijain608@gmail.com"  fn={openEmail}    />
             <ContactCard icon="💼" label="LinkedIn" sub="Connect professionally"  fn={openLinkedIn} />
             <ContactCard icon="📦" label="Amazon"   sub="Buy Aks · a.co/d/h1iLPQF" fn={openAmazon} />
             <ContactCard icon="💬" label="WhatsApp" sub="Order signed copy"       fn={openWhatsApp} />
