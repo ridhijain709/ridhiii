@@ -26,6 +26,15 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Debug - List files
+        run: |
+          echo "=== ROOT FILES ==="
+          ls -la
+          echo "=== SRC FILES ==="
+          ls -la src/ || echo "NO SRC FOLDER"
+          echo "=== PACKAGE.JSON ==="
+          cat package.json || echo "NO PACKAGE.JSON"
+
       - name: Install dependencies
         run: npm install
 
