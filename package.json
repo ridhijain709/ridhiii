@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://ridhijain709.github.io/ridhii",
+  "homepage": "https://ridhijain709.github.io/ridhiii",
   "scripts": {
     "dev": "vite --port=3000 --host",
     "build": "vite build",
